@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function UserPostCard ({ children, username, avatar, createdAt, description }) {
   return (
-    <div className='bg-[#303030] text-neutral-200 p-4 rounded-lg mb-5'>
+    <div className='bg-[#303030] text-neutral-200 p-4 rounded-lg mb-5 mx-4 md:mx-0'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-x-2.5'>
           <Image

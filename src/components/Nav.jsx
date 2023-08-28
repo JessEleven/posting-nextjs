@@ -11,7 +11,7 @@ export default function Nav () {
   const [user] = useAuthState(auth)
   return (
     <nav className='mx-4 md:mx-0'>
-      <div className='h-12 md:h-16 mx-auto flex items-center justify-between'>
+      <div className='h-16 mx-auto flex items-center justify-between'>
         <Link translate='no' href='/' className='flex items-center gap-x-1.5'>
           <Image
             width={32}
@@ -25,17 +25,15 @@ export default function Nav () {
           </p>
         </Link>
 
-        {user && (
-          <Link href='/' className='p-1.5 bg-white bg-opacity-10 rounded-md'>
-            <SvgHome className='w-5 h-5 text-neutral-200' />
-          </Link>
-        )}
-
         <ul className='text-neutral-200'>
           <li className='flex items-center gap-x-2.5'>
             {user
               ? (
                 <div className='flex items-center gap-x-2.5'>
+                  <Link href='/' className='p-1.5 bg-white bg-opacity-10 rounded-md'>
+                    <SvgHome className='w-5 h-5 text-neutral-200' />
+                  </Link>
+
                   <Link href='/home' className='p-1.5 bg-white bg-opacity-10 rounded-md'>
                     <SvgHomeUser className='w-5 h-5' />
                   </Link>

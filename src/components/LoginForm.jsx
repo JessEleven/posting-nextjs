@@ -42,7 +42,7 @@ export default function LoginForm () {
   }, [user])
 
   return (
-    <div className='w-full mt-8 mx-5 md:mx-0 rounded-lg bg-violet-400 bg-opacity-10 block'>
+    <div className='w-full mt-8 mx-4 md:mx-0 rounded-lg bg-violet-400 bg-opacity-10 block'>
 
       <div className='flex justify-center mt-10'>
         <Image
